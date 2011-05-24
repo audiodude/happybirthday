@@ -1,1 +1,30 @@
-form
+<!DOCTYPE html>
+<head>
+  <% full_name = @person[:first] + ' ' + @person[:last] %>
+  <title>HAPPY BIRTHDAY <%= full_name %>!!!</title>
+
+  <style type="text/css">@import "form.css";</style></head>
+<body>
+  <form action="/birthday" method="GET">
+    <span class="label">Plural noun:</span> <input name="words[]"/><br/>
+    <span class="label">Profession (plural):</span> <input name="words[]"/><br/>
+    <span class="label">Noun:</span> <input name="words[]"/><br/>
+    <span class="label">Verb ending in -ing:</span> <input name="words[]"/><br/>
+    <span class="label">Noun:</span> <input name="words[]"/><br/>
+    <span class="label">Collective pronoun (tricky!):</span> <input name="words[]"/><br/>
+    <span class="label">Adjective:</span> <input name="words[]"/><br/>
+    <span class="label">Adverb:</span> <input name="words[]"/><br/>
+    <span class="label">Noun:</span> <input name="words[]"/><br/>
+    <span class="label">Plural Noun:</span> <input name="words[]"/><br/>
+    <span class="label">Verb (present tense):</span> <input name="words[]"/><br/>
+    <span class="label">Noun:</span> <input name="words[]"/><br/>
+    <span class="label">Verb (past tense):</span> <input name="words[]"/><br/>
+    <span class="label">Noun:</span> <input name="words[]"/><br/>
+    <span class="label">Type of vehicle:</span> <input name="words[]"/><br/>
+    <span class="label">Adjective:</span> <input name="words[]"/><br/>
+    <span class="label">Noun:</span> <input name="words[]"/><br/>
+    
+    <input class="submit" type="submit" value="Okay...">
+  </form>
+</body>
+</html>

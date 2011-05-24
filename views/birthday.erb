@@ -1,1 +1,18 @@
-birthday
+<!DOCTYPE html>
+<head>
+  <% full_name = @person[:first] + ' ' + @person[:last] %>
+  <title>HAPPY BIRTHDAY <%= full_name %>!!!</title>
+  
+  <style type="text/css">@import "birthday.css";</style>
+</head>
+<body>
+  <img id="photo" src="person.jpg" alt="<%= full_name %>" title="The one and only, folks!"/>
+  <p class="first">Today is <span class="name"><%= full_name %></span>&apos;s birthday, and you know what that means: lots of <%= @words[0] %>
+    with <%= @words[1] %>. You see, <%= full_name %> has something of a <%= @words[2] %> when it comes to <%= @words[3] %> a <%= @words[4] %>: He
+    always makes sure that <%= @words[5] %> is <%= @words[6] %>. One birthday, he <%= @words[7] %> ran out of <%= @words[8] %> so the
+    <%= @words[9] %> decided to just <%= @words[10] %> <%= @words[11]%>! But it was O-K because everyone still <%= @words[12]%> a good
+    <%= @words[13]%> in the <%= @words[14] %>.
+  </p>
+  <p class="conclusion">I guess you could say that <span class="name"><%= full_name %> is a real <%= @words[15] %> <%= @words[16] %>!!</p>
+</body>
+</html>

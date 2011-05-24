@@ -1,0 +1,16 @@
+body {
+  line-height: 30px;
+}
+
+.label {
+  display: block;
+  text-align: right;
+  float: left;
+  clear: both;
+  width: 200px;
+  margin-right: 10px;
+}
+
+input.submit {
+  margin-left: 400px;
+}

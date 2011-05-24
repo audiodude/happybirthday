@@ -10,7 +10,7 @@
   <script type="text/javascript" src="jquery.countdown.pack.js"></script>
 </head>
 <body>
-  <h1 style="width:900px; text-align:center; margin: auto">Waiting for <span style="font-weight: bold"><%= full_name %></span>&apos;s next birthday...  </h1>
+  <h1>Waiting for <span style="font-weight: bold"><%= full_name %></span>&apos;s next birthday...  </h1>
   <div id="countdown"></div>
   <script type="text/javascript">
     $("#countdown").countdown({until: new Date(<%= @person[:birthday_next].strftime('%G, %m-1, %d') %>)});

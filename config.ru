@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
-Bundle.require :default
+Bundler.require :default, ENV['RACK_ENV]
 
 Sinatra::Application.default_options.merge!(
   :run => false,

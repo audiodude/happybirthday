@@ -3,8 +3,6 @@ require 'sinatra'
 require 'erb'
 require 'date'
 
-$tz = TZInfo::Timezone.get("America/New_York")
-
 before do
   @person = {}
   @person[:first] = 'Christian'

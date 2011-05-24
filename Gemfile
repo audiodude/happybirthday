@@ -1,3 +1,3 @@
 source :rubygems
 gem 'sinatra'
-gem 'tzinfo'
+# gem 'tzinfo' #not currently working

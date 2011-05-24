@@ -1,0 +1,11 @@
+body {
+  margin-top: 100px;
+}
+
+#countdown {
+  height: 4em;
+  line-height: 1.5em;
+  padding-top: 1em;
+  width: 400px;
+  margin: 20px auto;
+}

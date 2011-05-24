@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% full_name = @person[:first] + ' ' + @person[:last] %>
+  <title>It's less than <%= @countdown %> days until <%= full_name %>&apos;s next birthday!</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  
+  <style type="text/css">@import "jquery.countdown.css";</style> 
+  <style type="text/css">@import "countdown.css";</style> 
+  <script type="text/javascript" src="jquery.countdown.pack.js"></script>
+</head>
+<body>
+  <h1 style="width:900px; text-align:center; margin: auto">Waiting for <span style="font-weight: bold"><%= full_name %></span>&apos;s next birthday...  </h1>
+  <div id="countdown"></div>
+  <script type="text/javascript">
+    $("#countdown").countdown({until: new Date(<%= @person[:birthday_next].strftime('%G, %m-1, %d') %>)});
+  </script>
+</body>
+</html>

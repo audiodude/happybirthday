@@ -12,7 +12,7 @@ before do
   @person = {}
   @person[:first] = 'Christian'
   @person[:last] = 'Rodriguez'
-  @person[:birthday] = Date.commercial(2011, 21, 3) #see Date docs
+  @person[:birthday] = Date.commercial(2011, 21, 1) #see Date docs
   @person[:birthday_next] = Date.commercial(Date.today.year, @person[:birthday].cweek, @person[:birthday].cwday)
   @person[:birthday_next] += 365 if @person[:birthday_next] - Date.today < 0
 end

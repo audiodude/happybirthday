@@ -1,0 +1,40 @@
+Happy Birthday: A simple Sinatra app for celebrating someone's birthday.
+
+On the day of their birthday, the app will show a 'cryptic' form to all
+visitors. Filling out the form provides a birthday-themed madlib featuring a
+picture of the special guy/gal.
+
+On all other days of the year, you get a JS countdown (powered by jQuery and
+<http://plugins.jquery.com/project/countdown2>).
+
+Try going to /birthday on a non-birthday date and get a special easter egg!
+
+Customizing:
+
+You can easily change this app to use a person other than Christian
+Rodriguez (I don't know why you would want to, but I digress....)
+
+Simply change three variables in the before filter in app.rb:
+
+@person[:first] = 'Christian'
+@person[:last] = 'Rodriguez'
+@person[:birthday] = Date.commercial(2011, 21, 1) #see Date docs
+
+Finally, update public/person.jpg with your new birthday boy/girl. That's it!
+
+Author: Travis Briggs, briggs.travis (at) gmail.com
+===================================================
+Copyright (C) 2011 Travis Briggs
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
